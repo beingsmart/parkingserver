@@ -1,0 +1,124 @@
+{
+  "spaces": [
+    {
+      "coordinates": [
+        79.301553,
+        16.602784
+      ],
+      "type": "Point",
+      "spaceName": "Shivalayam Temple"
+    },
+    {
+      "coordinates": [
+        79.304085,
+        16.602285
+      ],
+      "type": "Point",
+      "spaceName": "Pay & Accounts"
+    },
+    {
+      "coordinates": [
+        79.306347,
+        16.604003
+      ],
+      "type": "Point",
+      "spaceName": "Kamala Nehru Hospital"
+    },
+    {
+      "coordinates": [
+        79.307330,
+        16.605358
+      ],
+      "type": "Point",
+      "spaceName": "Green Land Tourist House"
+    },
+    {
+      "coordinates": [
+        79.307319,
+        16.607188
+      ],
+      "type": "Point",
+      "spaceName": "Govt Jr College"
+    },
+    {
+      "coordinates": [
+        79.304068,
+        16.607805
+      ],
+      "type": "Point",
+      "spaceName": "Bala Vihar"
+    },
+    {
+      "coordinates": [
+        79.296494,
+        16.610324
+      ],
+      "type": "Point",
+      "spaceName": "Vijaya Vihar"
+    },
+    {
+      "coordinates": [
+        79.299605,
+        16.610031
+      ],
+      "type": "Point",
+      "spaceName": "Nehru Children Park"
+    },
+    {
+      "coordinates": [
+        79.301483,
+        16.612128
+      ],
+      "type": "Point",
+      "spaceName": "Kanals School"
+    },
+    {
+      "coordinates": [
+        79.288247,
+        16.626877
+      ],
+      "type": "Point",
+      "spaceName": "Budha Bhavan"
+    },
+    {
+      "coordinates": [
+        79.313895,
+        16.586190
+      ],
+      "type": "Point",
+      "spaceName": "Pylon Park"
+    },
+    {
+      "coordinates": [
+        79.316352,
+        16.583527
+      ],
+      "type": "Point",
+      "spaceName": "B.ED College"
+    },
+    {
+      "coordinates": [
+        79.301870,
+        16.552897
+      ],
+      "type": "Point",
+      "spaceName": "Zincano Ground"
+    },
+    {
+      "coordinates": [
+        79.310029,
+        16.561698
+      ],
+      "type": "Point",
+      "spaceName": "Sai Baba Temple"
+    },
+    {
+      "coordinates": [
+        79.298704,
+        16.611789
+      ],
+      "type": "Point",
+      "spaceName": "St Josephs High School"
+    }
+  ]
+}

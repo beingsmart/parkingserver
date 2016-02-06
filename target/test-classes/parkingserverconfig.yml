@@ -1,0 +1,28 @@
+spaces.store: "mongodb://parkice:parkservice@ds051585.mongolab.com:51585/spaces"
+server:
+  applicationConnectors:
+    - type: http
+      port: 7275
+  adminConnectors:
+    - type: http
+      port: 7276
+
+logging:
+  level: INFO
+  appenders:
+    - type: file
+      currentLogFilename: /var/log/myapplication.log
+      threshold: ALL
+      archive: true
+      archivedLogFilenamePattern: /var/log/myapplication-%d.log
+      archivedFileCount: 5
+      timeZone: UTC
+      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %level %logger{36} - %msg%n"
+
+
+db.runCommand( { geoNear : "places" ,
+              near : { type : "Point" ,
+                       coordinates: [63.667, 12.1225 ] } ,
+              spherical : true } )
+
+db.runCommand({geoNear:"places",near:{type:"Point","coordinates":[79.304321,16.604008]},spherical:true,"maxDistance":2000})

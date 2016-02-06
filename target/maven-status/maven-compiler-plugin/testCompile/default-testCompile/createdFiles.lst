@@ -1,0 +1,7 @@
+com/park/core/ParkingTest.class
+com/park/core/UploadHandlerTest.class
+com/park/resources/SpaceTest.class
+com/park/config/ParkingServiceConfigurationTest.class
+com/park/api/ParkingSpaceTest.class
+com/park/api/query/GeoNearTest.class
+com/park/store/GenericMongoStoreTest.class
