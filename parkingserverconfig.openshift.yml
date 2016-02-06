@@ -1,0 +1,22 @@
+spaces.store: "mongodb://parkice:parkservice@ds051585.mongolab.com:51585/spaces"
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+http:
+    bindHost: @OPENSHIFT_DIY_IP@
+    adminPort: @OPENSHIFT_DIY_PORT@
+logging:
+  level: INFO
+  appenders:
+    - type: file
+      currentLogFilename: /var/log/myapplication.log
+      threshold: ALL
+      archive: true
+      archivedLogFilenamePattern: /var/log/myapplication-%d.log
+      archivedFileCount: 5
+      timeZone: UTC
+      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %level %logger{36} - %msg%n"
