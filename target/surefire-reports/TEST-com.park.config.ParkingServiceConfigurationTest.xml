@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.park.config.ParkingServiceConfigurationTest" time="1.519" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="com.park.config.ParkingServiceConfigurationTest" time="1.506" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib"/>
@@ -63,52 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.park.config.ParkingServiceConfigurationTest" name="testGetMongoStore" time="1.519">
-    <error message="Unrecognized field &quot;db.runCommand( { geoNear&quot; (class com.park.config.ParkingServiceConfiguration), not marked as ignorable (5 known properties: &quot;spaces.store&quot;, &quot;server&quot;, &quot;mongoStore&quot;, &quot;logging&quot;, &quot;metrics&quot;])
- at [Source: file:/Users/sarath/sarathsmac/smart-saver/parkingserver/target/test-classes/parkingserverconfig.yml; line: 23, column: 36] (through reference chain: com.park.config.ParkingServiceConfiguration[&quot;db.runCommand( { geoNear&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;db.runCommand( { geoNear&quot; (class com.park.config.ParkingServiceConfiguration), not marked as ignorable (5 known properties: &quot;spaces.store&quot;, &quot;server&quot;, &quot;mongoStore&quot;, &quot;logging&quot;, &quot;metrics&quot;])
- at [Source: file:/Users/sarath/sarathsmac/smart-saver/parkingserver/target/test-classes/parkingserverconfig.yml; line: 23, column: 36] (through reference chain: com.park.config.ParkingServiceConfiguration[&quot;db.runCommand( { geoNear&quot;])
-	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:51)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:839)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1045)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1352)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1330)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:228)
-	at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:152)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3736)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2679)
-	at com.park.config.ParkingServiceConfigurationTest.setup(ParkingServiceConfigurationTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>14:59:15.411 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[ds051585.mongolab.com:51585], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout=&apos;30000 ms&apos;, maxWaitQueueSize=500}
-14:59:15.489 [main] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, servers=[{address=ds051585.mongolab.com:51585, type=UNKNOWN, state=CONNECTING}]
-</system-out>
-  </testcase>
+  <testcase classname="com.park.config.ParkingServiceConfigurationTest" name="testGetMongoStore" time="1.506"/>
 </testsuite>

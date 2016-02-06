@@ -3,6 +3,7 @@ package com.park.store;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -12,6 +13,7 @@ import static org.junit.Assert.*;
 /**
  * Created by sharath on 26/1/16.
  */
+@Ignore("ignore from build")
 public class GenericMongoStoreTest {
     GenericMongoStore genericMongoStore;
 

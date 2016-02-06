@@ -18,11 +18,3 @@ logging:
       archivedFileCount: 5
       timeZone: UTC
       logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %level %logger{36} - %msg%n"
-
-
-db.runCommand( { geoNear : "places" ,
-              near : { type : "Point" ,
-                       coordinates: [63.667, 12.1225 ] } ,
-              spherical : true } )
-
-db.runCommand({geoNear:"places",near:{type:"Point","coordinates":[79.304321,16.604008]},spherical:true,"maxDistance":2000})

@@ -65,7 +65,5 @@
   </properties>
   <testcase classname="com.park.resources.SpaceTest" name="com.park.resources.SpaceTest" time="0">
     <skipped/>
-    <system-out>14:59:33.721 [cluster-ClusterId{value=&apos;56b5bcf7caf903028beff80d&apos;, description=&apos;null&apos;}-ds051585.mongolab.com:51585] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:4, serverValue:100944}
-</system-out>
   </testcase>
 </testsuite>
