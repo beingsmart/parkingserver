@@ -6,6 +6,7 @@ server:
       port: 8080
   adminConnectors:
     - type: http
+      bindHost: @OPENSHIFT_DIY_IP@
       port: 8081
 logging:
   level: INFO
