@@ -11,10 +11,10 @@ logging:
   level: INFO
   appenders:
     - type: file
-      currentLogFilename: /var/log/myapplication.log
+      currentLogFilename: /tmp/myapplication.log
       threshold: ALL
       archive: true
-      archivedLogFilenamePattern: /var/log/myapplication-%d.log
+      archivedLogFilenamePattern: /tmp/myapplication-%d.log
       archivedFileCount: 5
       timeZone: UTC
       logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %level %logger{36} - %msg%n"

@@ -54,7 +54,7 @@ public class UploadHandler {
 
     private void checkForIndex() {
         if (!ParkingService.jongo.getDatabase().getCollectionNames().contains(spaceCollName)) {
-            ParkingService.jongo.getCollection(spaceCollName).ensureIndex("{loc:\"2dsphere\"}");
+            ParkingService.jongo.getCollection(spaceCollName).ensureIndex(MongoFields._2D_SPHERE);
         }
     }
 

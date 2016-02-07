@@ -22,13 +22,16 @@ public class ParkingServiceConfiguration extends Configuration {
      */
     @NotEmpty
     @JsonProperty("spaces.store")
+    String mongoURL;
+
     GenericMongoStore spacesStore;
 
-    public void setMongoStore(String mongoURL) throws IOException {
-        this.spacesStore = new GenericMongoStore(mongoURL);
+    public void setMongoStore(String mongoURL) {
+        this.mongoURL=mongoURL;
     }
 
-    public GenericMongoStore getMongoStore() {
+    public GenericMongoStore getMongoStore() throws IOException {
+        this.spacesStore = new GenericMongoStore(mongoURL);
         return spacesStore;
     }
 }

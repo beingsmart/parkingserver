@@ -3,6 +3,7 @@ package com.park;
 import com.codahale.metrics.health.HealthCheck;
 import com.park.config.ParkingServiceConfiguration;
 import com.park.healthcheck.SpaceStoreHealthCheck;
+import com.park.resources.Space;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 import org.jongo.Jongo;
@@ -15,6 +16,7 @@ import java.util.SortedMap;
 public class ParkingService extends Application<ParkingServiceConfiguration> {
 
     public static Jongo jongo;
+
 
     @Override
     public void run(ParkingServiceConfiguration parkingServiceConfiguration, Environment environment) throws Exception {
@@ -30,6 +32,9 @@ public class ParkingService extends Application<ParkingServiceConfiguration> {
         }
 
         jongo = parkingServiceConfiguration.getMongoStore().build(environment);
+
+        Space space = new Space();
+        environment.jersey().register(space);
     }
 
     public static void main(String args[]) throws Exception {

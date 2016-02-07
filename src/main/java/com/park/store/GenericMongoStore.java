@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
+import com.park.ParkingService;
 import com.park.config.constants.MongoFields;
 import io.dropwizard.lifecycle.Managed;
 import io.dropwizard.setup.Environment;
@@ -55,10 +56,10 @@ public class GenericMongoStore {
             @Override
             public void start() {
                 Set<String> collectionNames = new DB(mongo, mongoURI.getDatabase()).getCollectionNames();
-                String locationIndex = String.format(MongoFields.SIMPLE_KEY_VALUE, MongoFields.LOC);
-                for (String spaceColl : collectionNames) {
-                    jongo.getCollection(spaceColl).ensureIndex(locationIndex, "2dsphere");
-                }
+                collectionNames.remove("system.indexes");
+                collectionNames.remove("objectlabs-system");
+                for (String collName : collectionNames) {
+                    jongo.getCollection(collName).ensureIndex(MongoFields._2D_SPHERE);               }
             }
 
             @Override

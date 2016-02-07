@@ -27,6 +27,7 @@ public class ParkingServiceConfigurationTest {
 
     @Test
     public void testGetMongoStore() throws Exception {
+        System.out.println(parkingServiceConfiguration.getMongoStore().toString());
         assertNotNull(parkingServiceConfiguration);
     }
 }

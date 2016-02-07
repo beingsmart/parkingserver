@@ -13,10 +13,10 @@ logging:
   level: INFO
   appenders:
     - type: file
-      currentLogFilename: /var/log/myapplication.log
+      currentLogFilename: /var/lib/openshift/56b59b0f0c1e66506b000214/app-root/logs/myapplication.log
       threshold: ALL
       archive: true
-      archivedLogFilenamePattern: /var/log/myapplication-%d.log
+      archivedLogFilenamePattern: /var/lib/openshift/56b59b0f0c1e66506b000214/app-root/logs/myapplication-%d.log
       archivedFileCount: 5
       timeZone: UTC
       logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} %thread %level %logger{36} - %msg%n"
