@@ -6,9 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.park.ParkingService;
-import com.park.api.ParkingSpace;
+import com.park.api.TaggedLocation;
 import com.park.api.query.GeoNear;
-import org.hibernate.validator.constraints.Email;
 import org.jongo.MongoCollection;
 
 import java.util.List;
@@ -16,12 +15,12 @@ import java.util.List;
 /**
  * Created by sharath on 29/1/16.
  */
-public class Parking {
+public class SpaceHandler {
     private String collectionName;
     private final Double[] coordinates = new Double[2];
     private final ObjectMapper objectMapper;
 
-    public Parking(String collectionName, double lat, double lon) {
+    public SpaceHandler(String collectionName, double lat, double lon) {
         objectMapper = new ObjectMapper();
         this.collectionName = collectionName;
         coordinates[0] = lon;
@@ -49,5 +48,13 @@ public class Parking {
 
         }
         return nearBy;
+    }
+
+    public void parkNow(String userId) {
+        MongoCollection parkNow = ParkingService.jongo.getCollection(collectionName);
+        TaggedLocation location = new TaggedLocation();
+        location.setCoordinates(coordinates);
+        location.setUserId(userId);
+        parkNow.insert(location);
     }
 }
