@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.park.core.UploadHandlerTest" time="0.001" errors="0" skipped="1">
+<testsuite tests="1" failures="0" name="com.park.core.UploadHandlerTest" time="0" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib"/>
@@ -63,9 +63,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.park.core.UploadHandlerTest" name="com.park.core.UploadHandlerTest" time="0.001">
+  <testcase classname="com.park.core.UploadHandlerTest" name="com.park.core.UploadHandlerTest" time="0">
     <skipped message="ignore from build"/>
-    <system-out>13:51:39.030 [cluster-ClusterId{value=&apos;56c8220cda46410bf43e3d5a&apos;, description=&apos;null&apos;}-ds051585.mongolab.com:51585] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:6, serverValue:149842}
-</system-out>
   </testcase>
 </testsuite>

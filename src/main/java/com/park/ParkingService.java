@@ -3,6 +3,7 @@ package com.park;
 import com.codahale.metrics.health.HealthCheck;
 import com.park.config.ParkingServiceConfiguration;
 import com.park.healthcheck.SpaceStoreHealthCheck;
+import com.park.resources.Park;
 import com.park.resources.Space;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
@@ -49,7 +50,9 @@ public class ParkingService extends Application<ParkingServiceConfiguration> {
         cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
         Space space = new Space();
+        Park park = new Park();
         environment.jersey().register(space);
+        environment.jersey().register(park);
     }
 
     public static void main(String args[]) throws Exception {
