@@ -3,13 +3,11 @@ package com.park.resources;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.base.Optional;
-import com.park.ParkingService;
 import com.park.api.ParkingSpace;
 import com.park.api.SpaceList;
 import com.park.config.constants.PathConstants;
-import com.park.core.Parking;
+import com.park.core.SpaceHandler;
 import com.park.core.UploadHandler;
-import org.jongo.MongoCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,8 +57,8 @@ public class Space {
                                  @PathParam(PathConstants.LON) double lon,
                                  @QueryParam(PathConstants.COUNTRY) Optional<String> country) throws JsonProcessingException {
 
-        Parking parking = new Parking(country.or("ind") + SPACE, lat, lon);
-        JsonNode spaceList = parking.findSpace();
+        SpaceHandler spaceHandler = new SpaceHandler(country.or("ind") + SPACE, lat, lon);
+        JsonNode spaceList = spaceHandler.findSpace();
         return spaceList;
     }
 }

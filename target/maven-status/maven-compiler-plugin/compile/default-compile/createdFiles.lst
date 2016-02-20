@@ -1,10 +1,14 @@
+com/park/core/TagHandler.class
 com/park/api/SpaceList.class
-com/park/core/Parking.class
 com/park/config/ParkingServiceConfiguration.class
 com/park/store/GenericMongoStore$1.class
 com/park/api/GeoJson.class
+com/park/api/query/Find.class
+com/park/resources/Park.class
+com/park/api/TaggedLocation.class
 com/park/config/constants/MongoFields.class
 com/park/config/constants/PathConstants.class
+com/park/core/SpaceHandler.class
 com/park/core/UploadHandler.class
 com/park/healthcheck/SpaceStoreHealthCheck.class
 com/park/ParkingService.class

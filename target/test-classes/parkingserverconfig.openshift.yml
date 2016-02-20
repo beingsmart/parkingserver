@@ -2,13 +2,12 @@ spaces.store: "mongodb://parkice:parkservice@ds051585.mongolab.com:51585/spaces"
 server:
   applicationConnectors:
     - type: http
+      bindHost: @OPENSHIFT_DIY_IP@
       port: 8080
   adminConnectors:
     - type: http
+      bindHost: @OPENSHIFT_DIY_IP@
       port: 8081
-http:
-    bindHost: @OPENSHIFT_DIY_IP@
-    adminPort: @OPENSHIFT_DIY_PORT@
 logging:
   level: INFO
   appenders:

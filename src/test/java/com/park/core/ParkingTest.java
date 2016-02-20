@@ -11,15 +11,13 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by sharath on 29/1/16.
  */
 @Ignore("ignore from build")
 public class ParkingTest {
 
-    private Parking places;
+    private SpaceHandler places;
     private GenericMongoStore genericMongoStore;
 
     @Before
@@ -35,7 +33,7 @@ public class ParkingTest {
 
         parkingSpace = objectMapper.readValue("{\"coordinates\":[79.306347, 16.604003],  \"type\":\"Point\", \"spaceName\":\"Kamala Nehru Hospital\"}", ParkingSpace.class);
         uploader.uploadSpace(parkingSpace);
-        places = new Parking("places", 16.604008, 79.304321);
+        places = new SpaceHandler("places", 16.604008, 79.304321);
 
     }
 

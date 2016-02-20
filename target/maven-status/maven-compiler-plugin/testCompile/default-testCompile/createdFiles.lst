@@ -4,4 +4,5 @@ com/park/resources/SpaceTest.class
 com/park/config/ParkingServiceConfigurationTest.class
 com/park/api/ParkingSpaceTest.class
 com/park/api/query/GeoNearTest.class
+com/park/core/TagHandlerTest.class
 com/park/store/GenericMongoStoreTest.class

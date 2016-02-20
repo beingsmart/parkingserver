@@ -20,7 +20,7 @@ public class TaggedLocation {
     /**
      * userId
      */
-    @JsonProperty("userId")
+    @JsonProperty("user_id")
     private String userId;
 
     public void setUserId(String userId) {

@@ -49,12 +49,4 @@ public class SpaceHandler {
         }
         return nearBy;
     }
-
-    public void parkNow(String userId) {
-        MongoCollection parkNow = ParkingService.jongo.getCollection(collectionName);
-        TaggedLocation location = new TaggedLocation();
-        location.setCoordinates(coordinates);
-        location.setUserId(userId);
-        parkNow.insert(location);
-    }
 }

@@ -12,4 +12,5 @@ public class PathConstants {
     public static final String COUNTRY = "country";
     public static final String LAT = "lat";
     public static final String LON = "lon";
+    public static final String USER_ID = "userId";
 }

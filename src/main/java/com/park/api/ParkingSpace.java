@@ -24,7 +24,7 @@ public class ParkingSpace {
     private Double[] coordinates;
 
     /**
-     * Parking space name
+     * SpaceHandler space name
      */
     @JsonProperty("spaceName")
     private String spaceName;

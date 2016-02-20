@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by sharath on 26/1/16.
  * <p/>
- * Parking Service Configuration file. Contains objects for YAML config sections.
+ * SpaceHandler Service Configuration file. Contains objects for YAML config sections.
  */
 public class ParkingServiceConfiguration extends Configuration {
     public void setSpacesStore(GenericMongoStore spacesStore) {

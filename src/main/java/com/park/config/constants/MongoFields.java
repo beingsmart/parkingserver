@@ -14,5 +14,8 @@ public class MongoFields {
      * loc field
      */
     public static final String LOC = "loc";
-    public static final String _2D_SPHERE =  "{loc:\"2dsphere\"}";;
+    public static final String _2D_SPHERE =  "{loc:\"2dsphere\"}";
+
+    public static final String PARKED_NOW = "parked_now";
+
 }

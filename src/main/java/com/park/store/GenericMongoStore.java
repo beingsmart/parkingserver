@@ -55,11 +55,13 @@ public class GenericMongoStore {
         environment.lifecycle().manage(new Managed() {
             @Override
             public void start() {
-                Set<String> collectionNames = new DB(mongo, mongoURI.getDatabase()).getCollectionNames();
+              /*  Set<String> collectionNames = new DB(mongo, mongoURI.getDatabase()).getCollectionNames();
                 collectionNames.remove("system.indexes");
                 collectionNames.remove("objectlabs-system");
                 for (String collName : collectionNames) {
-                    jongo.getCollection(collName).ensureIndex(MongoFields._2D_SPHERE);               }
+                    jongo.getCollection(collName).ensureIndex(MongoFields._2D_SPHERE);
+                }*/
+                jongo.getCollection(MongoFields.PARKED_NOW).ensureIndex("{\"user_id\": 1}", "{unique: true}");
             }
 
             @Override
