@@ -32,6 +32,7 @@ public class Park {
                                 @PathParam(PathConstants.LON) double lon,
                                 @PathParam(PathConstants.USER_ID) String userId) throws JsonProcessingException {
         TagHandler tagHandler = new TagHandler(userId);
+        tagHandler.removeTag();
         tagHandler.tagLocation(lon, lat);
         return objectMapper.createObjectNode().put("ok", 1);
     }
@@ -48,7 +49,7 @@ public class Park {
     @Path("/vacate/for/{" + PathConstants.USER_ID + "}")
     public JsonNode vacate(@PathParam(PathConstants.USER_ID) String userId){
         TagHandler tagHandler = new TagHandler(userId);
-        tagHandler.removeTag(userId);
+        tagHandler.removeTag();
         return objectMapper.createObjectNode().put("ok", 1);
     }
 }

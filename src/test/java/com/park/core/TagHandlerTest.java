@@ -45,7 +45,7 @@ public class TagHandlerTest {
 
     @Test
     public void testRemoveTag() throws Exception {
-        tagHandler.removeTag("1");
+        tagHandler.removeTag();
         assertNull(tagHandler.retrieveTag("1"));
     }
 

@@ -41,7 +41,7 @@ public class TagHandler {
         return as;
     }
 
-    public void removeTag(String userId) {
+    public void removeTag() {
         parkedNow.remove("{user_id:\"" + userId + "\"}");
     }
 }
