@@ -38,6 +38,9 @@ public class TagHandler {
 
     public TaggedLocation retrieveTag(String userId) {
         TaggedLocation as = parkedNow.findOne("{user_id:\"" + userId + "\"}").as(TaggedLocation.class);
+        if(as==null){
+            return new TaggedLocation();
+        }
         return as;
     }
 
