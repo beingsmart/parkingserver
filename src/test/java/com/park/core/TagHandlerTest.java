@@ -30,7 +30,6 @@ public class TagHandlerTest {
         ParkingService.jongo = genericMongoStore.createJongo();
         ParkingService.jongo.getCollection(PARKED_NOW_TEST).ensureIndex("{\"user_id\": 1}", "{unique: true}");
         tagHandler = new TagHandler("1", PARKED_NOW_TEST);
-        tagHandler.tagLocation(1.9839, 2.4567);
     }
 
     @Test(expected = com.mongodb.DuplicateKeyException.class)
