@@ -2,6 +2,7 @@ package com.park.core;
 
 import com.mongodb.DuplicateKeyException;
 import com.park.ParkingService;
+import com.park.api.TaggedLocation;
 import com.park.store.GenericMongoStore;
 import org.jongo.Jongo;
 import org.junit.After;
@@ -40,7 +41,8 @@ public class TagHandlerTest {
 
     @Test
     public void testRetrieveTag() throws Exception {
-        assertThat(tagHandler.retrieveTag("1").getCoordinates()[1], equalTo(2.9));
+        TaggedLocation taggedLocation = tagHandler.retrieveTag("1");
+        assertThat(taggedLocation.getCoordinates()[1], equalTo(2.9));
     }
 
     @Test
