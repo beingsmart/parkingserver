@@ -42,6 +42,12 @@ public class GenericMongoStore {
         this.mongo = new MongoClient(mongoURI);
     }
 
+    public GenericMongoStore() throws IOException{
+        this("mongodb://admin:3dJ-b35LBuqC@"
+                +System.getenv("OPENSHIFT_MONGODB_DB_HOST")
+                +":"+System.getenv("OPENSHIFT_MONGODB_DB_PORT")
+                +"/spaces");
+    }
 
     /**
      * Builds jongo object with the db specified in the config.

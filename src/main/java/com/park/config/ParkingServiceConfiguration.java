@@ -31,7 +31,7 @@ public class ParkingServiceConfiguration extends Configuration {
     }
 
     public GenericMongoStore getMongoStore() throws IOException {
-        this.spacesStore = new GenericMongoStore(mongoURL);
+        this.spacesStore = new GenericMongoStore();
         return spacesStore;
     }
 }
