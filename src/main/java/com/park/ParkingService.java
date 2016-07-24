@@ -56,6 +56,8 @@ public class ParkingService extends Application<ParkingServiceConfiguration> {
     }
 
     public static void main(String args[]) throws Exception {
+        System.setProperty("OPENSHIFT_MONGODB_DB_HOST", System.getenv("OPENSHIFT_MONGODB_DB_HOST"));
+        System.setProperty("OPENSHIFT_MONGODB_DB_PORT", System.getenv("OPENSHIFT_MONGODB_DB_PORT"));
         new ParkingService().run(args);
     }
 }

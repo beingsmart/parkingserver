@@ -10,7 +10,10 @@ import io.dropwizard.lifecycle.Managed;
 import io.dropwizard.setup.Environment;
 import org.jongo.Jongo;
 
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Set;
 
 /**
@@ -37,7 +40,9 @@ public class GenericMongoStore {
     private final MongoClient mongo;
 
     public GenericMongoStore(String mongoURL) throws IOException {
-        this.mongoURL = mongoURL;
+
+        this.mongoURL = mongoURL.replace("OPENSHIFT_MONGODB_DB_HOST", System.getProperty("OPENSHIFT_MONGODB_DB_HOST"))
+                .replace("OPENSHIFT_MONGODB_DB_PORT", System.getProperty("OPENSHIFT_MONGODB_DB_PORT"));
         this.mongoURI = new MongoClientURI(this.mongoURL);
         this.mongo = new MongoClient(mongoURI);
     }
