@@ -65,7 +65,7 @@
   </properties>
   <testcase classname="com.park.core.UploadHandlerTest" name="com.park.core.UploadHandlerTest" time="0">
     <skipped message="ignore from build"/>
-    <system-out>16:51:42.630 [cluster-ClusterId{value=&apos;5794a4c0f60055042e12c654&apos;, description=&apos;null&apos;}-ds051585.mongolab.com:51585] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:6, serverValue:86964}
+    <system-out>21:22:27.893 [cluster-ClusterId{value=&apos;5794e436f600550609f7d1b2&apos;, description=&apos;null&apos;}-ds051585.mongolab.com:51585] DEBUG org.mongodb.driver.connection - Closing connection connectionId{localValue:6, serverValue:87483}
 </system-out>
   </testcase>
 </testsuite>
