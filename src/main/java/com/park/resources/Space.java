@@ -45,7 +45,7 @@ public class Space {
     @POST
     @Path("/bulk_upload/{" + PathConstants.COUNTRY + "}")
     public Response upload(@PathParam(PathConstants.COUNTRY) String country, SpaceList spaceList) throws IOException {
-        UploadHandler uploadHandler = new UploadHandler(country + SPACE);
+        UploadHandler uploadHandler = new UploadHandler(country.toLowerCase() + SPACE);
         for (ParkingSpace parkingSpace : spaceList.getSpaces()) {
             uploadHandler.uploadSpace(parkingSpace);
         }
