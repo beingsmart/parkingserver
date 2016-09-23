@@ -1,0 +1,44 @@
+{
+  "spaces": [
+    {
+      "coordinates": [
+        73.829820,
+        18.545945
+      ],
+      "type": "Point",
+      "spaceName": "Pune University Jogging Track"
+    },
+    {
+      "coordinates": [
+        73.800884,
+        18.539606
+      ],
+      "type": "Point",
+      "spaceName": "ARDE Sports Ground"
+    },
+    {
+      "coordinates": [
+        73.814629,
+        18.551290
+      ],
+      "type": "Point",
+      "spaceName": "The Oval"
+    },
+    {
+      "coordinates": [
+        73.795171,
+        18.555239
+      ],
+      "type": "Point",
+      "spaceName": "Kundan Garden, Baner road"
+    },
+    {
+      "coordinates": [
+        73.793125,
+        18.552262
+      ],
+      "type": "Point",
+      "spaceName": "pagdandi books chai cafe"
+    },
+  ]
+}

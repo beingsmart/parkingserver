@@ -1,0 +1,44 @@
+{
+  "spaces": [
+    {
+      "coordinates": [
+        73.77.6664305,
+        12.9846558
+      ],
+      "type": "Point",
+      "spaceName": "Bhuvaneswari Temple"
+    },
+    {
+      "coordinates": [
+        77.664027,
+        12.991932
+      ],
+      "type": "Point",
+      "spaceName": "Nagavarpalya Main Road"
+    },
+    {
+      "coordinates": [
+        77.678768,
+        12.974739
+      ],
+      "type": "Point",
+      "spaceName": "Kaggadaspura Main Road"
+    },
+    {
+      "coordinates": [
+        73.795171,
+        18.555239
+      ],
+      "type": "Point",
+      "spaceName": "Kundan Garden, Baner road"
+    },
+    {
+      "coordinates": [
+        73.793125,
+        18.552262
+      ],
+      "type": "Point",
+      "spaceName": "pagdandi books chai cafe"
+    },
+  ]
+}

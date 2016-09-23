@@ -1,0 +1,44 @@
+{
+  "spaces": [
+    {
+      "coordinates": [
+        78.394421,
+        17.443826
+      ],
+      "type": "Point",
+      "spaceName": "Kavuri Hills Phase1"
+    },
+    {
+      "coordinates": [
+        78.394807,
+        17.447905
+      ],
+      "type": "Point",
+      "spaceName": "100 Feet Road"
+    },
+    {
+      "coordinates": [
+        78.396867,
+        17.446794
+      ],
+      "type": "Point",
+      "spaceName": "Alamgir Masjid Lane"
+    },
+    {
+      "coordinates": [
+        78.408840,
+        17.434168
+      ],
+      "type": "Point",
+      "spaceName": "Road No. 10"
+    },
+    {
+      "coordinates": [
+        78.400450,
+        17.431583
+      ],
+      "type": "Point",
+      "spaceName": "Road No 45"
+    }
+  ]
+}
