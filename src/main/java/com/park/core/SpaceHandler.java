@@ -6,9 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.park.ParkingService;
-import com.park.api.TaggedLocation;
-import com.park.api.query.GeoNear;
-import org.jongo.MongoCollection;
+import queries.GeoNear;
 
 import java.util.List;
 

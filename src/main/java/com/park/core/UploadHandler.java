@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.park.ParkingService;
 import com.park.api.GeoJson;
 import com.park.api.ParkingSpace;
-import com.park.api.query.GeoNear;
+import queries.GeoNear;
 import com.park.config.constants.MongoFields;
 import org.jongo.MongoCollection;
 

@@ -22,6 +22,8 @@ public class ParkingTest {
 
     @Before
     public void setup() throws IOException {
+        System.setProperty("OPENSHIFT_MONGODB_DB_HOST", "OPENSHIFT_MONGODB_DB_HOST");
+        System.setProperty("OPENSHIFT_MONGODB_DB_PORT", "OPENSHIFT_MONGODB_DB_PORT");
         genericMongoStore = new GenericMongoStore("mongodb://parkice:parkservice@ds051585.mongolab.com:51585/spaces");
         ParkingService.jongo = genericMongoStore.createJongo();
         ObjectMapper objectMapper = new ObjectMapper();
