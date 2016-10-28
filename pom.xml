@@ -55,17 +55,6 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.parqco</groupId>
-            <artifactId>spinalcord</artifactId>
-            <version>0.5-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.parqco</groupId>
-            <artifactId>gullet</artifactId>
-            <version>0.5-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
     <build>
