@@ -1,15 +1,14 @@
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/store/GenericMongoStore.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/config/constants/MongoFields.java
-/Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/api/query/GeoNear.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/config/constants/PathConstants.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/core/SpaceHandler.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/ParkingService.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/api/ParkingSpace.java
-/Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/api/query/Find.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/resources/Park.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/resources/Space.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/api/SpaceList.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/healthcheck/SpaceStoreHealthCheck.java
+/Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/events/EventGenerator.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/api/GeoJson.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/config/ParkingServiceConfiguration.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/main/java/com/park/core/UploadHandler.java

@@ -3,7 +3,6 @@ com/park/api/SpaceList.class
 com/park/config/ParkingServiceConfiguration.class
 com/park/store/GenericMongoStore$1.class
 com/park/api/GeoJson.class
-com/park/api/query/Find.class
 com/park/resources/Park.class
 com/park/api/TaggedLocation.class
 com/park/config/constants/MongoFields.class
@@ -12,7 +11,8 @@ com/park/core/SpaceHandler.class
 com/park/core/UploadHandler.class
 com/park/healthcheck/SpaceStoreHealthCheck.class
 com/park/ParkingService.class
+com/park/events/EventGenerator$1.class
+com/park/events/EventGenerator.class
 com/park/resources/Space.class
 com/park/api/ParkingSpace.class
 com/park/store/GenericMongoStore.class
-com/park/api/query/GeoNear.class

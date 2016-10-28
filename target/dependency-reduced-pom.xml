@@ -7,6 +7,13 @@
   <build>
     <plugins>
       <plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <configuration>
+          <scmVersionType>branch</scmVersionType>
+          <scmVersion>${scm.branch}</scmVersion>
+        </configuration>
+      </plugin>
+      <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
@@ -64,6 +71,13 @@
       </exclusions>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>local-public-mvn-repo</id>
+      <name>local clone of https://github.com/beingsmart/strongbox</name>
+      <url>${local.public.mvn.repo}</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <dropwizard.version>0.9.2</dropwizard.version>
   </properties>

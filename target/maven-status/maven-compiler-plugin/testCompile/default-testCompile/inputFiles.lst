@@ -1,7 +1,7 @@
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/core/ParkingTest.java
+/Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/events/EventGeneratorTest.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/api/ParkingSpaceTest.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/config/ParkingServiceConfigurationTest.java
-/Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/api/query/GeoNearTest.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/store/GenericMongoStoreTest.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/core/TagHandlerTest.java
 /Users/sarath/sarathsmac/smart-saver/parkingserver/src/test/java/com/park/core/UploadHandlerTest.java

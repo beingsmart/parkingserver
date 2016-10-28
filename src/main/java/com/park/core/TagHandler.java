@@ -24,7 +24,7 @@ public class TagHandler {
 
     }
 
-    public void tagLocation(Double lon, Double lat) {
+    public TaggedLocation tagLocation(Double lon, Double lat) {
         Double[] coordinates = new Double[2];
 
         coordinates[0] = lon;
@@ -34,17 +34,20 @@ public class TagHandler {
         location.setCoordinates(coordinates);
         location.setUserId(userId);
         parkedNow.insert(location);
+        return location;
     }
 
     public TaggedLocation retrieveTag(String userId) {
         TaggedLocation as = parkedNow.findOne("{user_id:\"" + userId + "\"}").as(TaggedLocation.class);
-        if(as==null){
+        if (as == null) {
             return new TaggedLocation();
         }
         return as;
     }
 
-    public void removeTag() {
+    public TaggedLocation removeTag() {
+        TaggedLocation tagLocation = retrieveTag(userId);
         parkedNow.remove("{user_id:\"" + userId + "\"}");
+        return tagLocation;
     }
 }

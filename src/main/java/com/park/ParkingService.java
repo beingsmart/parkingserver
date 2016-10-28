@@ -14,6 +14,8 @@ import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
 import java.util.EnumSet;
 import java.util.SortedMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by sharath on 26/1/16.
@@ -21,7 +23,7 @@ import java.util.SortedMap;
 public class ParkingService extends Application<ParkingServiceConfiguration> {
 
     public static Jongo jongo;
-
+    public static ExecutorService executor;
 
     @Override
     public void run(ParkingServiceConfiguration parkingServiceConfiguration, Environment environment) throws Exception {
@@ -37,6 +39,7 @@ public class ParkingService extends Application<ParkingServiceConfiguration> {
         }
 
         jongo = parkingServiceConfiguration.getMongoStore().build(environment);
+        executor = Executors.newFixedThreadPool(24);
 
         final FilterRegistration.Dynamic cors =
                 environment.servlets().addFilter("CORS", CrossOriginFilter.class);
