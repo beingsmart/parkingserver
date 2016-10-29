@@ -64,7 +64,7 @@
       </snapshots>
       <id>local-public-mvn-repo</id>
       <name>local clone of https://github.com/beingsmart/strongbox</name>
-      <url>https://github.com/beingsmart/strongbox</url>
+      <url>https://github.com/beingsmart/strongbox/raw/master/releases</url>
     </repository>
     <repository>
       <snapshots>
