@@ -1,4 +1,4 @@
-spaces.store: "mongodb://parkice:parkservice@OPENSHIFT_MONGODB_DB_HOST:OPENSHIFT_MONGODB_DB_PORT/spaces"
+spaces.store: "mongodb://parkice:parkservice@ds051585.mongolab.com:51585/spaces"
 server:
   applicationConnectors:
     - type: http

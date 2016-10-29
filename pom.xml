@@ -7,7 +7,16 @@
     <groupId>com.smartcar.park</groupId>
     <artifactId>parkingserver</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <repositories>
+        <repository>
+            <id>strongbox</id>
+            <url>https://raw.github.com/beingsmart/strongbox</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
     <properties>
         <dropwizard.version>0.9.2</dropwizard.version>
     </properties>
@@ -19,6 +28,16 @@
         </repository>
     </distributionManagement>
     <dependencies>
+        <dependency>
+            <groupId>com.parqco</groupId>
+            <artifactId>spinalcord</artifactId>
+            <version>0.5-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.parqco</groupId>
+            <artifactId>gullet</artifactId>
+            <version>0.5-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
