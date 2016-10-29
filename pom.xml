@@ -10,7 +10,7 @@
     <repositories>
         <repository>
             <id>strongbox</id>
-            <url>https://raw.github.com/beingsmart/strongbox</url>
+            <url>https://github.com/beingsmart/strongbox</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -20,13 +20,6 @@
     <properties>
         <dropwizard.version>0.9.2</dropwizard.version>
     </properties>
-    <distributionManagement>
-        <repository>
-            <id>local-public-mvn-repo</id>
-            <name>local clone of https://github.com/beingsmart/strongbox</name>
-            <url>${local.public.mvn.repo}</url>
-        </repository>
-    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>com.parqco</groupId>
