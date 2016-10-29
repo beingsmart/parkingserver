@@ -9,8 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <repositories>
         <repository>
-            <id>strongbox</id>
-            <url>https://github.com/beingsmart/strongbox</url>
+            <id>local-public-mvn-repo</id>
+            <name>local clone of https://github.com/beingsmart/strongbox</name>
+            <url>${local.public.mvn.repo}</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
