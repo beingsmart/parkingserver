@@ -32,8 +32,7 @@ public class EventGenerator implements Runnable {
         DateTime now = DateTime.now();
         Double[] coordinates = taggedLocation.getCoordinates();
         Location location = null;
-        List<EventType> activityTypes = Arrays.asList(eventTypes);
-        activityTypes.remove(EventType.APP_OPEN);
+
         if (coordinates.length > 0) {
             location = new Location(coordinates[1], coordinates[0]);
         }
